@@ -28,7 +28,7 @@ namespace AutoLevelup
             Thread t = new Thread(new ThreadStart(livellini));
             t.Start();
             Game.OnGameUpdate += Game_OnGameUpdate;
-            Game.PrintChat("<font color='#C80046'>Changelog:Fixed Urgot :( sorry </font>");
+            Game.PrintChat("<font color='#C80046'>Changelog:Bard Added </font>");
 
         }
         public static void livellini()
@@ -57,6 +57,7 @@ namespace AutoLevelup
             }
             else if (Player.BaseSkinName == "Ashe") abilitySequence = new int[] { 2, 1, 3, 2, 2, 4, 2, 1, 2, 1, 4, 1, 1, 3, 3, 4, 3, 3 };
             else if (Player.BaseSkinName == "Azir") abilitySequence = new int[] { 2, 1, 3, 2, 2, 4, 2, 1, 2, 1, 4, 1, 1, 3, 3, 4, 3, 3 };
+            else if (Player.BaseSkinName == "Bard") abilitySequence = new int[] { 1, 2, 1, 3, 1, 4, 1, 2, 1, 2, 4, 2, 2, 3, 3, 4, 3, 3 };
             else if (Player.BaseSkinName == "Blitzcrank")
             {
                 if (ObjectManager.Player.Masteries.Where(mastery => mastery.Page == MasteryPage.Utility)
